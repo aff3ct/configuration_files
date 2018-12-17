@@ -2,12 +2,14 @@
 SCMA codebook input files for the AFF3CT SCMA modem
 ===================================================
 
+Take a look at the documentation for more details.
+
 Format
 ------
 
 **number_of_users** (*V*) **number_of_orthogonal_resources** (*K*) **codebook_size** (*M*)
 
-*KV* rows, *2M* columns 
+*KV* rows, *2M* columns
 
 +------------+------------+-----------+-----------+-----------+
 | Re         | Im         | ...       | Re        | Im        |
@@ -22,7 +24,7 @@ Format
 Codebook description
 --------------------
 
-Codebooks are normalized, that average power of signal will be equal to 1.
+Codebooks are normalized, so the average power of signal will be equal to 1.
 
 +-------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Codebook Set| Description                                                                                                                                                                   |
@@ -45,5 +47,5 @@ Codebooks are normalized, that average power of signal will be equal to 1.
 | **CS8**     | From `Iterative multiuser receiver in sparse code multiple access systems <https://ieeexplore.ieee.org/document/7248770>`_, suitable only for uplink fading channel           |
 +-------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-The simalation results for **CS1**-**CS7** (AWGN and Reyleigh fading channels) can be find in the paper `SCMA Codebooks Optimization Based on Genetic Algorithm <https://ieeexplore.ieee.org/document/8011314>`_.
-The simalation results for **CS8** can be find in the paper `Detection of SCMA signal with channel estimation error <https://ieeexplore.ieee.org/document/7561515>`_ (defined as **CS2** in the paper).
+The simulation results for **CS1**-**CS7** (AWGN and Rayleigh fading channels) can be found in the paper `SCMA Codebooks Optimization Based on Genetic Algorithm <https://ieeexplore.ieee.org/document/8011314>`_.
+The simulation results for **CS8** can be found in the paper `Detection of SCMA signal with channel estimation error <https://ieeexplore.ieee.org/document/7561515>`_ (defined as **CS2** in the paper).
